@@ -5,8 +5,8 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun build ./src/index.ts --outdir ./lib --target node --external googleapis --external docx --exte>
-    "build:watch": "bun build ./src/index.ts --outdir ./lib --target node --external googleapis --external docx >
+    "build": "bun build ./src/index.ts --outdir ./lib --target node && cp package.json lib/",
+    "build:watch": "bun build ./src/index.ts --outdir ./lib --target node --watch",
     "serve": "bun run build && firebase emulators:start",
     "shell": "bun run build && firebase functions:shell",
     "start": "bun run shell",
