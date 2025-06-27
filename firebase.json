@@ -1,6 +1,6 @@
 {
   "functions": {
-    "source": "lib",
+    "source": "functions/lib",
     "runtime": "nodejs22"
   },
   "emulators": {
@@ -12,8 +12,13 @@
     }
   },
   "hosting": {
-    "site": "md2doc-n8n-aemalsayer-docs",
+    "site": "n8n-md2docs",
     "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "/.well-known/acme-challenge/**",
@@ -23,9 +28,10 @@
         "source": "**",
         "function": {
           "functionId": "mdToGoogleDoc",
-          "region": "us-central1"
+          "region": "us-central1",
+          "platform": "gcfv2"
         }
       }
     ]
   }
-} 
+}
