@@ -1,4 +1,4 @@
-#n8n-md2docs
+# n8n-md2docs
 
 My update adds formatting for numbered lists, uses New Times Roman (instead of Arial), and allows for multiple visible uncompressed paragraph breaks. Thanks to Aemal Sayer for creating this fine Firebase function perfect for use with n8n.
 
