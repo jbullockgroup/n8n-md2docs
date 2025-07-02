@@ -1,4 +1,8 @@
-# Markdown to Google Docs Converter for n8n
+#n8n-md2docs
+
+My update adds formatting for numbered lists, uses New Times Roman (instead of Arial), and allows for multiple visible uncompressed paragraph breaks. Thanks to Aeaml Sayer for creating this fine Firebase function perfect for use with n8n.
+
+## Markdown to Google Docs Converter for n8n
 
 A Firebase function that converts Markdown content to Google Docs format, specifically designed for n8n workflows. It seamlessly integrates with n8n's Google OAuth credentials and is perfect for converting LLM outputs into properly formatted Google Docs.
 
